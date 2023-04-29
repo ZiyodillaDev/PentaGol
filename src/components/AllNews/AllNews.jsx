@@ -1,4 +1,4 @@
 import "./allNews.scss"
 export const AllNews = () => {
-  return <div className="red">AllNews</div>;
+  return <div className="red container">AllNews</div>;
 };
