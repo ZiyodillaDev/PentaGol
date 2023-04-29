@@ -1,9 +1,9 @@
-import { AllNews } from "./components/AllNews/AllNews";
+import { News } from "./components/News/News";
 
 function App() {
   return (
     <div>
-      <AllNews />
+      <News />
     </div>
   );
 }
