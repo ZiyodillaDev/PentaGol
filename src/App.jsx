@@ -1,13 +1,10 @@
-import { useState } from "react";
-import "./App.css";
+import { AllNews } from "./components/AllNews/AllNews";
 
 function App() {
   return (
-    <>
-      <div>
-        
-      </div>
-    </>
+    <div>
+      <AllNews />
+    </div>
   );
 }
 
