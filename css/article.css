@@ -66,7 +66,7 @@ h5 {
   color: #000000;
 }
 
-.text_card {
+.text_card_all {
   padding: 20px;
   width: 375px;
   height: 54px;
@@ -110,6 +110,9 @@ h5 {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   width: 1720px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin: 0 auto;
 }
 
@@ -129,7 +132,7 @@ h5 {
   margin-bottom: 30px;
 }
 
-.news_ends {
+.news_ends_all {
   padding-top: 90px;
 }
 /*# sourceMappingURL=article.css.map */
