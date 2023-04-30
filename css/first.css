@@ -1,0 +1,93 @@
+.next_div {
+  padding-top: 40px;
+}
+
+.tabs {
+  display: flex;
+  background: #dae9e0;
+  border-radius: 15px !important;
+  border: none;
+}
+
+.tabs button {
+  border-radius: 15px !important;
+  border: none;
+  color: #777777;
+  cursor: pointer;
+  padding: 14px;
+  width: 100%;
+  background-color: #dae9e0;
+  transition: all 0.5s ease-out;
+  display: flex;
+  align-items: center;
+  max-width: 200px;
+  gap: 15px;
+  font-family: "Manrope";
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.tabs button:disabled {
+  background: #469264;
+  color: white;
+}
+
+.content {
+  padding-top: 30px;
+  padding-bottom: 62px;
+  display: flex;
+}
+
+.games {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.game-date {
+  display: flex;
+  flex-direction: column;
+}
+
+.game {
+  padding: 10px 20px;
+  background: #f4f5f7;
+  width: 355px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.club {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.club_name {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.score {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+}
+
+.date {
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  padding: 5px 13px;
+  border: 1px solid #f4f5f7;
+  width: 140px;
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 14px;
+}/*# sourceMappingURL=first.css.map */
