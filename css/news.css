@@ -1,11 +1,7 @@
 .news {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   gap: 20px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 
 .card_portfolio {
@@ -16,14 +12,10 @@
   overflow: hidden;
   position: relative;
 }
-
 .card_portfolio:hover {
-  -webkit-transition: display 5s;
   transition: display 5s;
 }
-
 .card_portfolio:hover #active_card {
-  -webkit-transition: 0.8s;
   transition: 0.8s;
   display: block;
   position: absolute;
@@ -34,14 +26,11 @@
   height: 100%;
   opacity: 0.8;
   width: 100%;
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3)));
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
 }
-
 .card_portfolio:hover .card_content {
   background: transparent;
   z-index: 99;
-  -webkit-transition: all 0.5s;
   transition: all 0.5s;
   bottom: 0;
   padding: 10px 20px;
@@ -58,10 +47,8 @@
   width: 100%;
   z-index: -1;
 }
-
 .img-card:hover {
-  -webkit-transform: scale(2);
-          transform: scale(2);
+  transform: scale(2);
 }
 
 .p {
@@ -88,15 +75,12 @@
   text-decoration: none;
   color: white;
 }
-
 .link_portfolio:hover {
   color: white;
 }
 
 .little_img {
   margin-top: -40px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   gap: 20px;
 }
@@ -109,14 +93,10 @@
   overflow: hidden;
   position: relative;
 }
-
 .card_portfolio3:hover {
-  -webkit-transition: display 5s;
   transition: display 5s;
 }
-
 .card_portfolio3:hover #active_card {
-  -webkit-transition: 0.8s;
   transition: 0.8s;
   display: block;
   position: absolute;
@@ -127,14 +107,11 @@
   height: 100%;
   opacity: 0.8;
   width: 100%;
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3)));
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
 }
-
 .card_portfolio3:hover .card_content {
   background: transparent;
   z-index: 99;
-  -webkit-transition: all 0.5s;
   transition: all 0.5s;
   bottom: 0;
   padding: 10px 20px;
@@ -193,11 +170,8 @@
 }
 
 .top {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
-
 .top-all {
   list-style: none;
   font-family: "Manrope";
@@ -217,11 +191,8 @@
 }
 
 ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
-
 ul li {
   padding: 13px;
   list-style: none;
@@ -264,5 +235,4 @@ select {
 
 .i {
   margin-left: 150px;
-}
-/*# sourceMappingURL=news.css.map */
+}/*# sourceMappingURL=news.css.map */
