@@ -1,1 +1,169 @@
-/* No CSS *//*# sourceMappingURL=footer.css.map */
+footer {
+  background: #469264;
+  padding: 40px 0;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer_left {
+  display: flex;
+  gap: 120px;
+}
+
+.menu {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 10px;
+}
+
+.menu > a {
+  color: white;
+  text-decoration: none;
+  font-family: "Manrope";
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.menu > a::after {
+  padding-top: 5px;
+  content: "";
+  display: block;
+  margin: 0 auto;
+  width: 0%;
+  transition: all 0.4s;
+  border-bottom: 3px solid white;
+}
+
+.menu > a:hover::after {
+  width: 100%;
+}
+
+.social-medias {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.pages {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.social {
+  display: flex;
+}
+
+.icon {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  z-index: 2;
+}
+
+.icon a {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  display: block;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+  z-index: 2;
+  transition: all 0.5s;
+}
+
+.icon:hover a {
+  transition: all 0.5s;
+  transform: scale(0.7);
+}
+
+.icon .tooltip {
+  position: absolute;
+  top: 0px;
+  color: white;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+  font-size: 1.5em;
+  padding: 0.5em 0.8em;
+  border-radius: 47%;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.4 cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.icon .tooltip::before {
+  content: "";
+  position: absolute;
+  width: 0.8em;
+  height: 0.8em;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%) rotate(45deg);
+}
+
+.icon:hover .tooltip {
+  top: -70px;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.icon:hover a,
+.icon:hover .tooltip {
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.4);
+}
+
+.facebook:hover .tooltip,
+.facebook:hover .tooltip::before {
+  background: #4267b2;
+}
+
+.instagram:hover .tooltip,
+.instagram:hover .tooltip::before {
+  background: #212121;
+}
+
+.twitter:hover .tooltip,
+.twitter:hover .tooltip::before {
+  background: #00acee;
+}
+
+.vk:hover .tooltip,
+.vk:hover .tooltip::before {
+  background: #5181B8;
+}
+
+.skype:hover .tooltip,
+.skype:hover .tooltip::before {
+  background: #00aff0;
+}
+
+.youtube:hover .tooltip,
+.youtube:hover .tooltip::before {
+  background: #ff0000;
+}
+
+.icons {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.icontop {
+  display: flex;
+  gap: 30px;
+  padding-top: 50px;
+  padding-left: 85px;
+}
+
+.iconbottom {
+  display: flex;
+  gap: 30px;
+}/*# sourceMappingURL=footer.css.map */
