@@ -9,3 +9,22 @@
   width: 100%;
   margin: 0 auto;
 }
+body{
+  background-color: var(--bg);
+}
+
+:root {
+  
+  --bg: #fff;
+  --text: #000;
+  --text-grey: #4a4b4c;
+  --table-grey: #f4f5f7;
+  --table-soccer: #f4f5f7;
+  .dark {
+    --bg: #16171b;
+    --text: #fff;
+    --text-grey: #959595;
+    --table-grey: #222327;
+    --table-soccer: #000;
+  }
+}

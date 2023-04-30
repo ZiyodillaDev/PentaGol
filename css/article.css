@@ -11,7 +11,7 @@
   font-weight: 500;
   font-size: 22px;
   line-height: 30px;
-  color: #333333;
+  color: var(--text);
 }
 
 .h1 {
@@ -23,7 +23,7 @@
   font-weight: 700;
   font-size: 36px;
   line-height: 49px;
-  color: #000000;
+  color: var(--text);
 }
 
 .img-news {
@@ -38,7 +38,7 @@
   font-weight: 500;
   font-size: 30px;
   line-height: 45px;
-  color: #000000;
+  color: var(--text);
 }
 
 .right {
@@ -47,7 +47,7 @@
 .right_tables {
   width: 415px;
   height: 591px;
-  background: #f4f5f7;
+  background: var(--table-soccer);
   border-radius: 10px;
 }
 
@@ -58,10 +58,10 @@ h5 {
   font-weight: 700;
   font-size: 24px;
   line-height: 33px;
-  color: #000000;
+  color: var(--text);
 }
 
-.text_card_all {
+.text_card {
   padding: 20px;
   width: 375px;
   height: 54px;
@@ -70,7 +70,7 @@ h5 {
   font-weight: 600;
   font-size: 20px;
   line-height: 27px;
-  color: #000000;
+  color: var(--text);
 }
 
 .time_cards {
@@ -123,5 +123,7 @@ h5 {
 }
 
 .news_ends_all {
-  padding-top: 90px;
-}/*# sourceMappingURL=article.css.map */
+  margin-top: 90px;
+  margin-bottom: 80px;
+}
+/*# sourceMappingURL=article.css.map */

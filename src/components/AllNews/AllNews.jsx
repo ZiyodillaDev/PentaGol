@@ -24,13 +24,13 @@ export const AllNews = () => {
       <div className="four-card">
         {slice.map((el) => {
           return (
-            <a href="#" style={{textDecoration:"none"}}>
+            <Link to="/article" style={{ textDecoration: "none" }}>
               <Card
                 hoverable
                 style={{
                   width: 415,
                   height: 410,
-                  background: "#F4F5F7",
+                  background: "var(--table-grey)",
                   paddingTop: 10,
                   paddingBottom: 15,
                   paddingLeft: 15,
@@ -51,26 +51,38 @@ export const AllNews = () => {
               >
                 <Title
                   level={4}
-                  style={{ width: "375px", height: 54, marginTop: "-15px" }}
+                  style={{
+                    color: "var(--text)",
+                    width: "375px",
+                    height: 54,
+                    marginTop: "-15px",
+                  }}
                 >
                   {el.title}
                 </Title>
-                <Meta
-                  description={el.p}
-                  style={{
-                    paddingBottom: 15,
-                  }}
-                />
                 <Title
                   level={5}
                   style={{
-                    color: "#898989",
+                    color: "var(--text)",
+                    marginTop: "-25px",
+                    marginLeft: "-20px",
+                  }}
+                >
+                  {el.p}
+                </Title>
+                <Title
+                  level={5}
+                  style={{
+                    color: "var(--text)",
+
+                    marginTop: "-30px",
+                    marginLeft: "-20px",
                   }}
                 >
                   {el.time}
                 </Title>
               </Card>
-            </a>
+            </Link>
           );
         })}
       </div>
