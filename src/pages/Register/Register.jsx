@@ -35,19 +35,19 @@ export const Register = () => {
           <h2>Register</h2>
           <form>
             <div className="user-box">
-              <input type="text" ref={firstNameRef} />
+              <input type="text" ref={firstNameRef} name required/>
               <label>First name</label>
             </div>
             <div className="user-box">
-              <input type="text" ref={lastNameRef} />
+              <input type="text" ref={lastNameRef} name required/>
               <label>Last name</label>
             </div>
             <div className="user-box">
-              <input type="email" ref={emailRef} />
+              <input type="email" ref={emailRef} name required/>
               <label>Email</label>
             </div>
             <div className="user-box">
-              <input type="password" ref={passwordRef} />
+              <input type="password" ref={passwordRef} name required/>
               <label>Password</label>
             </div>
             <a onClick={handleClick} href="#">
