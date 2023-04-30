@@ -6,13 +6,30 @@ import EndNew1 from "../../assets/images/endnew1.png";
 import { Avatar, Button, List, Skeleton } from "antd";
 import { useEffect, useState } from "react";
 import cardData from "./data";
+import axios from "axios";
 
 export const EndNews = () => {
-  const [noOfElements, setnoOfElements] = useState(20);
-  const slice = cardData.slice(0, noOfElements);
+  const [noOfElements, setnoOfElements] = useState(8);
+  const [data, setData] = useState([]);
+  const slice = data.slice(0, noOfElements);
   const loadMore = () => {
-    setnoOfElements(noOfElements + cardData.length);
+    setnoOfElements(noOfElements + 4);
   };
+ useEffect(()=>{
+  const EndNews = async () => {
+    const data = await axios.get(
+      "http://127.0.0.1:8000/article/list_last/"
+    );
+    // console.log(data.data);
+    setData(data.data)
+
+  }
+  EndNews()
+
+ },[])
+ 
+
+  // console.log(data);
   return (
     <div className="container ">
       <div className="tops">
@@ -27,7 +44,7 @@ export const EndNews = () => {
                 hoverable
                 style={{
                   width: 415,
-                  height: 410,
+                  height: 500,
                   background: "var(--table-grey)",
                   paddingTop: 10,
                   paddingBottom: 15,
@@ -38,7 +55,7 @@ export const EndNews = () => {
                 cover={
                   <img
                     alt="example"
-                    src={el.img}
+                    src={el.image}
                     style={
                       {
                         // width: 385,
@@ -68,7 +85,7 @@ export const EndNews = () => {
                     marginLeft: "-20px",
                   }}
                 >
-                  {el.p}
+                  {el.description}
                 </Title>
                 <Title
                   level={5}
@@ -79,7 +96,7 @@ export const EndNews = () => {
                     marginLeft: "-20px",
                   }}
                 >
-                  {el.time}
+                  {el.created_date}
                 </Title>
               </Card>
             </Link>

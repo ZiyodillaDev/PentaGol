@@ -7,17 +7,20 @@ import { Header } from "./components/Header/Header";
 import { Footer } from "./components/Footer/Footer";
 
 function App() {
-  // const localdata = localStorage.getItem("token");
-  return (
-    <>
-      <Header />
-      <Routes>
-        <Route path="/" element={<User />} />
-        <Route path="/article" element={<Article />} />
-      </Routes>
-      <Footer />
-    </>
-  );
+  const localdata = localStorage.getItem("token");
+  if(localdata){
+    return (
+      <>
+        <Header />
+        <Routes>
+          <Route path="/" element={<User />} />
+          <Route path="/article" element={<Article />} />
+        </Routes>
+        <Footer />
+      </>
+    );
+  }
+return <Register/>
 }
 
 export default App;

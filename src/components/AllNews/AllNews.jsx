@@ -6,19 +6,32 @@ import EndNew1 from "../../assets/images/endnew1.png";
 import { Avatar, Button, List, Skeleton } from "antd";
 import { useEffect, useState } from "react";
 const count = 3;
-const fakeDataUrl = `https://randomuser.me/api/?results=${count}&inc=name,gender,email,nat,picture&noinfo`;
 import cardData from "../EndNews/data";
+import axios from "axios";
 
 export const AllNews = () => {
+  const [data, setData] = useState([]);
   const [noOfElements, setnoOfElements] = useState(12);
-  const slice = cardData.slice(0, noOfElements);
+  const slice = data.slice(0, noOfElements);
   const loadMore = () => {
-    setnoOfElements(noOfElements + cardData.length);
+    setnoOfElements(noOfElements + 8);
   };
+  useEffect(()=>{
+    const EndNews = async () => {
+      const data = await axios.get(
+        "http://127.0.0.1:8000/article/list_all/"
+      );
+      // console.log(data.data);
+      setData(data.data)
+  
+    }
+    EndNews()
+  
+   },[])
   return (
     <div className="container ">
       <div className="tops">
-        <p>So'ngi yangiliklar</p>
+        <p>Barcha yangiliklar</p>
       </div>
 
       <div className="four-card">
@@ -29,7 +42,7 @@ export const AllNews = () => {
                 hoverable
                 style={{
                   width: 415,
-                  height: 410,
+                  height: 450,
                   background: "var(--table-grey)",
                   paddingTop: 10,
                   paddingBottom: 15,
@@ -39,7 +52,7 @@ export const AllNews = () => {
                 cover={
                   <img
                     alt="example"
-                    src={el.img}
+                    src={el.image}
                     style={
                       {
                         // width: 385,
@@ -68,7 +81,7 @@ export const AllNews = () => {
                     marginLeft: "-20px",
                   }}
                 >
-                  {el.p}
+                  {el.description}
                 </Title>
                 <Title
                   level={5}
@@ -79,7 +92,7 @@ export const AllNews = () => {
                     marginLeft: "-20px",
                   }}
                 >
-                  {el.time}
+                  {el.created_date}
                 </Title>
               </Card>
             </Link>
