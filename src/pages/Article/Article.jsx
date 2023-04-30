@@ -6,8 +6,10 @@ const { Title, Paragraph, Text, Link } = Typography;
 
 import Meta from "antd/es/card/Meta";
 import { useState } from "react";
+import { useParams } from "react-router";
 
 export const Article = () => {
+  const { name } = useParams();
   const [noOfElements, setnoOfElements] = useState(12);
   const slice = cardData.slice(0, noOfElements);
   return (
@@ -49,7 +51,7 @@ export const Article = () => {
         <div className="right">
           <div className="right_tables">
             <h5>Asosiy</h5>
-            <p className="text_card_all">
+            <p className="text_card">
               Messi Goal.com saytida yilning eng yaxshi futbolchisi deb topildi
             </p>
             <p className="time_cards">12.05.2021 12:54</p>
@@ -94,10 +96,8 @@ export const Article = () => {
         </div>
       </div>
       <div className="news_ends_all">
-        <div className="head_line">
-          So'ngi yangiliklar
-        </div>
-        <a href="#" style={{ textDecoration: "none" }}>
+        <div className="head_line">So'ngi yangiliklar</div>
+        <Link to="/article" style={{ textDecoration: "none" }}>
           <div className="end_news">
             {slice.map((el) => {
               return (
@@ -106,35 +106,44 @@ export const Article = () => {
                   style={{
                     width: 415,
                     height: 410,
-                    background: "#F4F5F7",
+                    background: "var(--table-grey)",
                     paddingTop: 10,
                     paddingBottom: 15,
                     paddingLeft: 15,
                     paddingRight: 15,
+                    border: "1px solid var(--table-grey)",
                   }}
-                  cover={
-                    <img
-                      alt="example"
-                      src={el.img}
-                    />
-                  }
+                  cover={<img alt="example" src={el.img} />}
                 >
                   <Title
                     level={4}
-                    style={{ width: "375px", height: 54, marginTop: "-15px" }}
-                  >
-                   {el.title}
-                  </Title>
-                  <Meta
-                    description={el.p}
                     style={{
-                      paddingBottom: 15,
+                      color: "var(--text)",
+                      width: "375px",
+                      height: 54,
+                      marginTop: "-15px",
                     }}
-                  />
+                  >
+                    {el.title}
+                  </Title>
+
                   <Title
                     level={5}
                     style={{
-                      color: "#898989",
+                      color: "var(--text)",
+                      marginTop: "-25px",
+                      marginLeft: "-20px",
+                    }}
+                  >
+                    {el.p}
+                  </Title>
+                  <Title
+                    level={5}
+                    style={{
+                      color: "var(--text)",
+
+                      marginTop: "-30px",
+                      marginLeft: "-20px",
                     }}
                   >
                     {el.time}
@@ -143,7 +152,7 @@ export const Article = () => {
               );
             })}
           </div>
-        </a>
+        </Link>
       </div>
     </div>
   );

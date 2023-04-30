@@ -13,7 +13,7 @@
       line-height: 38px;
       margin-left: 30px;
       padding-top: 20px;
-      color: #ffffff;
+      color: #fff;
     }
   }
   .four-card {
@@ -27,6 +27,7 @@
     margin-bottom: 30px;
   }
   .btn {
+    margin-bottom: 80px !important;
     cursor: pointer;
     display: flex;
     flex-direction: row;
@@ -37,7 +38,7 @@
     width: 1720px;
     height: 79px;
     margin: 0 auto;
-    background: #eaeaea;
+    background: var(--table-grey);
     border-radius: 10px;
     border: 1px solid #ddd;
   
@@ -48,6 +49,6 @@
     line-height: 33px;
     /* identical to box height */
   
-    color: #000000;
+    color: var(--text);
   }
   

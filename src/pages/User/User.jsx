@@ -6,18 +6,16 @@ import { Header } from "../../components/Header/Header";
 import { FirstWeek } from "../../components/FirstWeek/FirstWeek";
 import { LastWeek } from "../../components/LastWeek/LastWeek";
 import { Footer } from "../../components/Footer/Footer";
+import { Route, Routes } from "react-router";
 
 export const User = () => {
   return (
     <div>
-      <Header/>
-      <FirstWeek/>
-      <LastWeek/>
+      <FirstWeek />
+      <LastWeek />
       <News />
       <EndNews />
       <AllNews />
-      <Footer/>
-      {/* <Article /> */}
     </div>
   );
 };

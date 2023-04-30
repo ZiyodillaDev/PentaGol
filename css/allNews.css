@@ -15,7 +15,7 @@
   line-height: 38px;
   margin-left: 30px;
   padding-top: 20px;
-  color: #ffffff;
+  color: #fff;
 }
 
 .four-card {
@@ -35,6 +35,7 @@
 }
 
 .btn {
+  margin-bottom: 80px !important;
   cursor: pointer;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -54,7 +55,7 @@
   width: 1720px;
   height: 79px;
   margin: 0 auto;
-  background: #eaeaea;
+  background: var(--table-grey);
   border-radius: 10px;
   border: 1px solid #ddd;
   font-family: "Manrope";
@@ -63,6 +64,6 @@
   font-size: 24px;
   line-height: 33px;
   /* identical to box height */
-  color: #000000;
+  color: var(--text);
 }
 /*# sourceMappingURL=allNews.css.map */

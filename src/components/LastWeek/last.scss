@@ -27,7 +27,7 @@
   
   .tabs button:disabled {
     background: #469264;
-    color: white;
+    color: var(--text);
   }
   
   .content {
@@ -47,7 +47,7 @@
   }
   .game {
     padding: 10px 20px;
-    background: #f4f5f7;
+    background: var(--table-soccer);
     width: 350px;
     display: flex;
     justify-content: space-between;

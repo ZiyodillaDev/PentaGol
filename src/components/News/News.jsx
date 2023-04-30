@@ -13,11 +13,11 @@ import { Register } from "../../pages/Register/Register";
 export const News = () => {
   return (
     <div className="container news">
-      <Link to={<Register/>}>admin page</Link>
+      {/* <Link to={<Register/>}>admin page</Link> */}
       <div className="cards">
         <div className="card_portfolio">
-          <a
-            href="#"
+          <Link
+            to="/article"
             target="_blank"
             rel="noopener noreferrer"
             className="link_portfolio"
@@ -32,14 +32,14 @@ export const News = () => {
               </h1>
               <p className="time">2 soat oldin</p>
             </div>
-          </a>
+          </Link>
         </div>
 
         <div>
           <div className="little_img">
             <div className="card_portfolio3">
-              <a
-                href="#"
+              <Link
+                to="/article"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="link_portfolio"
@@ -53,11 +53,11 @@ export const News = () => {
                   </p>
                   <p className="time3">3 soat oldin</p>
                 </div>
-              </a>
+              </Link>
             </div>
             <div className="card_portfolio3">
-              <a
-                href="#"
+              <Link
+                to="/article"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="link_portfolio"
@@ -71,11 +71,11 @@ export const News = () => {
                   </p>
                   <p className="time3">3 soat oldin</p>
                 </div>
-              </a>
+              </Link>
             </div>
             <div className="card_portfolio3">
-              <a
-                href="#"
+              <Link
+                to="/article"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="link_portfolio"
@@ -89,13 +89,13 @@ export const News = () => {
                   </p>
                   <p className="time3">3 soat oldin</p>
                 </div>
-              </a>
+              </Link>
             </div>
           </div>
           <div className="little_img">
             <div className="card_portfolio3">
-              <a
-                href="#"
+              <Link
+                to="/article"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="link_portfolio"
@@ -109,11 +109,11 @@ export const News = () => {
                   </p>
                   <p className="time3">3 soat oldin</p>
                 </div>
-              </a>
+              </Link>
             </div>
             <div className="card_portfolio3">
-              <a
-                href="#"
+              <Link
+                to="/article"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="link_portfolio"
@@ -127,11 +127,11 @@ export const News = () => {
                   </p>
                   <p className="time3">3 soat oldin</p>
                 </div>
-              </a>
+              </Link>
             </div>
             <div className="card_portfolio3">
-              <a
-                href="#"
+              <Link
+                to="/article"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="link_portfolio"
@@ -145,7 +145,7 @@ export const News = () => {
                   </p>
                   <p className="time3">3 soat oldin</p>
                 </div>
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -166,6 +166,27 @@ export const News = () => {
           <div className="top-all i">И</div>
           <div className="top-all o">О</div>
         </div>
+        <ul>
+          <li>1</li>
+          <li><img src={LogoBarcelona} alt="" /></li>
+          <li>Barcelona</li>
+          <li className="num1">15</li>
+          <li className="num2">14</li>
+        </ul>
+        <ul>
+          <li>1</li>
+          <li><img src={LogoBarcelona} alt="" /></li>
+          <li>Barcelona</li>
+          <li className="num1">15</li>
+          <li className="num2">14</li>
+        </ul>
+        <ul>
+          <li>1</li>
+          <li><img src={LogoBarcelona} alt="" /></li>
+          <li>Barcelona</li>
+          <li className="num1">15</li>
+          <li className="num2">14</li>
+        </ul>
         <ul>
           <li>1</li>
           <li><img src={LogoBarcelona} alt="" /></li>

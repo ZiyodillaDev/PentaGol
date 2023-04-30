@@ -1,4 +1,6 @@
 .tabs {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   background: #dae9e0;
   border-radius: 15px !important;
@@ -13,9 +15,14 @@
   padding: 14px;
   width: 100%;
   background-color: #dae9e0;
+  -webkit-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   max-width: 200px;
   gap: 15px;
   font-family: "Manrope";
@@ -25,42 +32,62 @@
 
 .tabs button:disabled {
   background: #469264;
-  color: white;
+  color: var(--text);
 }
 
 .content {
   padding-top: 30px;
   padding-bottom: 62px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
 .games {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   gap: 20px;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .game-date {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .game {
   padding: 10px 20px;
-  background: #f4f5f7;
+  background: var(--table-soccer);
   width: 350px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
 }
 
 .club {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   gap: 10px;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .club_name {
@@ -86,4 +113,5 @@
   font-family: "Roboto";
   font-weight: 400;
   font-size: 14px;
-}/*# sourceMappingURL=last.css.map */
+}
+/*# sourceMappingURL=last.css.map */
