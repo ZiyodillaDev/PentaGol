@@ -1,0 +1,119 @@
+.all-news {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.times {
+  margin-top: 40px;
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 30px;
+  color: #333333;
+}
+.h1 {
+  margin-top: 10px;
+  max-width: 1189px;
+  height: 98px;
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 49px;
+  color: #000000;
+}
+.img-news {
+  margin-top: 30px;
+}
+.news-txt {
+  margin-top: 40px;
+  max-width: 1140px;
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 45px;
+  color: #000000;
+}
+
+.right {
+  margin-top: 215px;
+  &_tables {
+    width: 415px;
+    height: 591px;
+
+    background: #f4f5f7;
+    border-radius: 10px;
+  }
+}
+h5 {
+  padding: 20px;
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 33px;
+  color: #000000;
+}
+
+.text_card_all {
+  padding: 20px;
+  width: 375px;
+  height: 54px;
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 27px;
+  color: #000000;
+}
+.time_cards {
+  margin-top: 15px;
+  padding: 20px;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: #898989;
+}
+.line {
+  width: 375px;
+  height: 0px;
+  left: 1425px;
+  top: 493px;
+  margin-left: 20px;
+  border: 1px solid #d2d2d2;
+}
+.end_table {
+  margin-top: 30px;
+}
+.end_news {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  width: 1720px;
+  justify-content: center;
+  margin: 0 auto;
+}
+.head_line {
+  width: 1720px;
+  height: 80px;
+  background: #469264;
+  border-radius: 10px;
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 38px;
+  padding: 21px;
+  color: #ffffff;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.news_ends_all {
+  padding-top: 90px;
+}

@@ -1,19 +1,17 @@
-import { AllNews } from "./components/AllNews/AllNews";
-import { FirstWeek } from "./components/FirstWeek/FirstWeek";
-import { Footer } from "./components/Footer/Footer";
-import { Header } from "./components/Header/Header";
-import { LastWeek } from "./components/LastWeek/LastWeek";
+import { Register } from "./pages/Register/Register";
+import { Login } from "./pages/Login/Login";
+import { User } from "./pages/User/User";
 
 function App() {
-  return (
-    <div>
-      <Header/>
-      <FirstWeek/>
-      <LastWeek/>
-      <Footer/>
-      {/* <AllNews /> */}
-    </div>
-  );
+  const localdata = localStorage.getItem("token");
+  if (localdata) {
+    return (
+      <div>
+        <User />
+      </div>
+    );
+  }
+  return <Register />;
 }
 
 export default App;
