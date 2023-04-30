@@ -7,10 +7,13 @@ import New4 from "../../assets/images/new4.png";
 import New5 from "../../assets/images/new55.png";
 import New6 from "../../assets/images/new6.png";
 import LogoBarcelona from "../../assets/images/barcelona.png";
+import { Link } from "react-router-dom";
+import { Register } from "../../pages/Register/Register";
 
 export const News = () => {
   return (
     <div className="container news">
+      <Link to={<Register/>}>admin page</Link>
       <div className="cards">
         <div className="card_portfolio">
           <a

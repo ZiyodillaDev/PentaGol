@@ -49,7 +49,7 @@ export const Article = () => {
         <div className="right">
           <div className="right_tables">
             <h5>Asosiy</h5>
-            <p className="text_card">
+            <p className="text_card_all">
               Messi Goal.com saytida yilning eng yaxshi futbolchisi deb topildi
             </p>
             <p className="time_cards">12.05.2021 12:54</p>
@@ -93,7 +93,7 @@ export const Article = () => {
           </div>
         </div>
       </div>
-      <div className="news_ends">
+      <div className="news_ends_all">
         <div className="head_line">
           So'ngi yangiliklar
         </div>
@@ -116,12 +116,6 @@ export const Article = () => {
                     <img
                       alt="example"
                       src={el.img}
-                      style={
-                        {
-                          // width: 385,
-                          // height: 231,
-                        }
-                      }
                     />
                   }
                 >

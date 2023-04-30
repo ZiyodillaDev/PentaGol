@@ -1,17 +1,17 @@
-import { EndNews } from "./components/EndNews/EndNews";
-import { AllNews } from "./components/AllNews/AllNews";
-import { News } from "./components/News/News";
-import { Article } from "./pages/Article/Article";
+import { Register } from "./pages/Register/Register";
+import { Login } from "./pages/Login/Login";
+import { User } from "./pages/User/User";
 
 function App() {
-  return (
-    <div>
-      {/* <News /> */}
-      {/* <EndNews /> */}
-      {/* <AllNews /> */}
-      <Article/>
-    </div>
-  );
+  const localdata = localStorage.getItem("token");
+  if (localdata) {
+    return (
+      <div>
+        <User />
+      </div>
+    );
+  }
+  return <Register />;
 }
 
 export default App;

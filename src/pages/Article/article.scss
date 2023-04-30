@@ -58,7 +58,7 @@ h5 {
   color: #000000;
 }
 
-.text_card {
+.text_card_all {
   padding: 20px;
   width: 375px;
   height: 54px;
@@ -95,6 +95,7 @@ h5 {
   gap: 20px;
   flex-wrap: wrap;
   width: 1720px;
+  justify-content: center;
   margin: 0 auto;
 }
 .head_line {
@@ -113,6 +114,6 @@ h5 {
   margin-bottom: 30px;
 }
 
-.news_ends {
+.news_ends_all {
   padding-top: 90px;
 }

@@ -5,7 +5,6 @@ const { Meta } = Card;
 import EndNew1 from "../../assets/images/endnew1.png";
 import { Avatar, Button, List, Skeleton } from "antd";
 import { useEffect, useState } from "react";
-const count = 3;
 import cardData from "./data";
 
 export const EndNews = () => {
